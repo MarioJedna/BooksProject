@@ -18,8 +18,9 @@ a:hover {
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    width: 40%;
-    margin: 0 auto;
+    margin: 5 auto;
+    background: rgb(53, 210, 140);
+    padding: 5px;
     .author-name,
     .author-id {
         display: flex;
@@ -27,5 +28,12 @@ a:hover {
         align-items: center;
         justify-content: flex-start;
         width: 250px;
+    }
+    .author-bio {
+        font-size: 0.5em;
+        width: 600px;
+    }
+    .author-id {
+        width: 50px;
     }
 }
