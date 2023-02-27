@@ -1,7 +1,6 @@
 <?php
 
 use App\Http\Controllers\AboutController;
-use App\Http\Controllers\BooksController;
 use App\Http\Controllers\IndexController;
 use Illuminate\Support\Facades\Route;
 
