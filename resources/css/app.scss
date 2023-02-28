@@ -37,3 +37,19 @@ a:hover {
         width: 50px;
     }
 }
+
+.comment {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.alert--success {
+    color: rgb(5, 119, 9);
+    font-size: 0.7em;
+}
+.alert--error {
+    color: rgb(121, 3, 3);
+    font-size: 0.7em;
+}
+
+@import "index.scss";

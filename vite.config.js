@@ -11,6 +11,8 @@ export default ({ mode }) => {
                 input: [
                     "resources/css/app.scss",
                     "resources/js/app.js",
+                    "resources/js/latest-books.js",
+                    "resources/js/book-search.js",
                     "resources/js/partners.jsx",
                 ],
                 refresh: true,
