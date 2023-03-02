@@ -33,4 +33,13 @@ class BooksController extends Controller
 
         return Redirect::back();
     }
+
+    public function delete_review($reviewId)
+    {
+        $review = Review::findorfail($reviewId);
+        $review->delete();
+
+        session()->flash('success_message', 'Review deleted successfully');
+        return Redirect::back();
+    }
 }

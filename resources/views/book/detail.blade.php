@@ -18,10 +18,20 @@
         </form>
     @endauth
 
-    @foreach ($book->reviews as $review)
-        <div class="comment">
-            <div>User: {{ $review->user_id }}</div>
-            <div>Text: {{ $review->text }}</div>
-        </div>
-    @endforeach
+
+    @if (Auth::check())
+        @foreach ($book->reviews as $review)
+            <div class="comment">
+                <div> User: {{ $review->user_id }} </div>
+                <div> Text: {{ $review->text }} </div>
+                @if (Auth::user()->role == 'admin')
+                    <form action="{{ route('book.review.delete', $review->id) }}" method="post">
+                        @csrf
+                        @method('DELETE');
+                        <button type="submit"> Delete </button>
+                    </form>
+                @endif
+            </div>
+        @endforeach
+    @endif
 @endsection

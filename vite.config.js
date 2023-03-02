@@ -13,6 +13,7 @@ export default ({ mode }) => {
                     "resources/js/app.js",
                     "resources/js/latest-books.js",
                     "resources/js/book-search.js",
+                    "resources/js/user-list/user-list.jsx",
                     "resources/js/partners.jsx",
                 ],
                 refresh: true,

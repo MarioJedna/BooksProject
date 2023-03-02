@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Api\BookController;
+use App\Http\Controllers\Api\UserController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -24,3 +25,6 @@ Route::get('/books/latest', [BookController::class, 'latest']);
 
 // api prefix is automatic in this file
 Route::get('/books/search', [BookController::class, 'search']);
+
+// api users
+Route::get('/users', [UserController::class, 'index']);
